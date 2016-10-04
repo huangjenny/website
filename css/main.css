@@ -72,11 +72,13 @@ body {
 }
 
 a {
-  color: #1C77C3;
+  color: #cab1da;
+  text-decoration: none;
 }
 
 a:hover {
-  color: black; 
+  color: #ededed; 
+  background: #cab1da;
   text-decoration: none;
 }
 
@@ -119,12 +121,12 @@ h3 {
 
 }
 
-
 #section {
   border-bottom: dotted 1px;
   font-family: Abel;
   padding: 10px;
-  width: 40%;
+  width: 37%;
+  color: black;
 }
 
 #title {
@@ -132,6 +134,7 @@ h3 {
   font-family: Poppins;
   margin-left: 15px;
   padding-right: 10px;
+  color: #a77dc2;
 }
 
 #pic {
@@ -156,12 +159,8 @@ h3 {
   opacity: 5;
 }
 
-.icon.purple {
-  color: #a77dc2;
-}
-
 .year {
-  color: #9C9C9C;
+  color: #909090;
 }
 
 @media only screen and (min-device-width: 320px)  and (max-device-width: 480px) {
