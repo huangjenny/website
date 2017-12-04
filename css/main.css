@@ -122,7 +122,7 @@ h3 {
 }
 
 #section {
-  border-bottom: dotted 1px;
+  /*border-bottom: dotted 1px;*/
   font-family: Abel;
   padding: 10px;
   width: 37%;
@@ -137,6 +137,15 @@ h3 {
   color: #a77dc2;
 }
 
+#tagline {
+  font-family: Abel;
+  width: 37%;
+  margin-left: 15px;
+  padding-right: 10px;
+  color: black;
+  text-align: center;
+}
+
 #pic {
   width: 100px;
   border-radius: 50%;
@@ -147,6 +156,7 @@ h3 {
 #text {
   padding: 7px;
   max-width: 500px;
+  text-align: center;
 }
 
 .icon {
