@@ -55,9 +55,6 @@ body {
 }
 
 #icons {
-  padding-left: 50px;
-  padding-right: 50px;
-
   -webkit-box-justify-content: space-around;
   -moz-box-justify-content: space-around;
   -webkit-justify-content: space-around;
@@ -69,26 +66,18 @@ body {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
-a {
-  color: #cab1da;
-  text-decoration: none;
+  display: inline-block;
 }
 
 a:hover {
-  color: #ededed; 
-  background: #cab1da;
+  color: #FFFFFF; 
+  background: #a77dc2;
   text-decoration: none;
 }
 
 a:visited {
 }
 
-h3 {
-  margin: 0;
-  padding-bottom: 10px;
-}
 
 .content {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -114,36 +103,62 @@ h3 {
   -webkit-flex-align-items: center;
   -ms-flex-align-items: center;
   align-items: center;
-
   max-width: 500px;
-
   padding-bottom: 10px;
 
 }
 
-#section {
-  /*border-bottom: dotted 1px;*/
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: 100;
+  margin: 0px;
+  text-align: right;
+  width: 380px;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-size: 19px;
+  color: #FFFFFF;
+  background-color: #a77dc2;
+  font-weight: 100;
+  margin: 0px;
+  padding: 5px 5px;
+  width: 380px;
+  text-align: right;
+}
+
+#text {
+  width: 380px;
+  font-size: 15px;
+  text-align: left;
   font-family: Abel;
-  padding: 10px;
-  width: 37%;
   color: black;
+  letter-spacing: 0.4px;
+  padding: 0px;
+}
+
+#contact{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #a77dc2;
+  font-weight: 100;
+  margin: 0px;
+  width: 360px;
+  padding: 3px 10px;
+  text-align: left;
 }
 
 #title {
   font-size: 35px;
   font-family: Quicksand;
-  margin-left: 15px;
-  padding-right: 10px;
-  color: #a77dc2;
-}
-
-#tagline {
-  font-family: Abel;
-  width: 37%;
-  margin-left: 15px;
-  padding-right: 10px;
-  color: black;
   text-align: center;
+  color: black;
 }
 
 #pic {
@@ -153,20 +168,11 @@ h3 {
   opacity: 1;
 }
 
-#text {
-  padding: 7px;
-  max-width: 500px;
-  text-align: center;
-}
-
 .icon {
   opacity: 0.75;
   color: black;
   padding: 5px;
-}
-
-.icon:hover {
-  opacity: 5;
+  display: inline-block;
 }
 
 .year {
