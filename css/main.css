@@ -25,7 +25,12 @@ body {
   -ms-align-items: center;
   align-items: center;
 
-  /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/d8/aa/f3d8aa396f614dc0878e324f27fcff7c.jpg');*/
+/*  background-image: url("../bg2.jpg");*/
+
+    /* Center and scale the image nicely */
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;*/
 }
 
 #column {
@@ -54,20 +59,6 @@ body {
   align-items: center;
 }
 
-#icons {
-  -webkit-box-justify-content: space-around;
-  -moz-box-justify-content: space-around;
-  -webkit-justify-content: space-around;
-  -ms-justify-content: space-around;
-  justify-content: space-around;
-
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
 a:hover {
   color: #FFFFFF; 
   background: #a77dc2;
@@ -76,7 +67,6 @@ a:hover {
 
 a:visited {
 }
-
 
 .content {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -107,31 +97,40 @@ a:visited {
 
 }
 
+#contain{
+  width: 350px;
+}
+
 h1 {
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: #000000;
   font-weight: 100;
   margin: 0px;
-  text-align: right;
+  text-align: center;
   max-width: 380px;
 }
 
 h2 {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 1px;
-  font-size: 19px;
+  font-size: 17px;
   color: #FFFFFF;
   background-color: #a77dc2;
   font-weight: 100;
-  margin: 0px;
-  padding: 5px 5px;
-  max-width: 380px;
-  text-align: right;
+/*  margin: 0px;
+  padding: 5px 10px;*/
+  margin-top: 4px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 350px;
+  max-width: 350px;
+  text-align: center;
 }
 
 #text {
-  max-width: 380px;
+  max-width: 350px;
   font-size: 15px;
   text-align: left;
   font-family: Abel;
@@ -140,18 +139,15 @@ h2 {
   padding: 0px;
 }
 
-
 #contact{
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2px;
-  font-size: 13px;
-  color: #FFFFFF;
-  background-color: #a77dc2;
-  font-weight: 100;
-  margin: 0px;
-  width: 360px;
-  padding: 3px 10px;
+  font-family: Abel;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 0.4px;
+  width: 350px;
   text-align: left;
+  padding: 0px;
+  max-width: 350px;
 }
 
 #title {
@@ -172,6 +168,22 @@ h2 {
   opacity: 0.75;
   color: black;
   padding: 5px;
+  max-width: 330px;
+  display: inline-block;
+}
+
+#icons {
+  -webkit-box-justify-content: space-around;
+  -moz-box-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   display: inline-block;
 }
 
@@ -179,17 +191,57 @@ h2 {
   color: #909090;
 }
 
+
 @media only screen and (min-device-width: 320px)  and (max-device-width: 480px) {
   #photo {
     display: none;
   }
 
-  h2{
-    max-width: 350px;
+  #contain{
+    width: 300px;
   }
 
-  #text {
-    max-width: 350px;
+h2 {
+/*  margin: 0px;
+  padding: 5px 10px;*/
+/*  padding-top: 5px;
+  padding-bottom: 5px;*/
+  margin-top: 0px;
+  margin-bottom: -4px;
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+
+#text {
+  max-width: 290px;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+  #contact{
+  /*  max-width: 300px;*/
+    overflow: scroll;
+  }
+
+  .icon{
+/*    overflow: auto;*/
+    text-align: right;
+    display: inline-block;
+  }
+
+  body{
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    /*background-position: 57% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
   }
 }
 
@@ -198,10 +250,14 @@ h2 {
     display: none;
   }
   h2{
-    max-width: 350px;
+    max-width: 285px;
   }
 
   #text {
-    max-width: 350px;
+    max-width: 330px;
+  }
+
+  #contact{
+    max-width: 330px;
   }
 }
